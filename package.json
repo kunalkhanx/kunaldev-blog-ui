@@ -1,0 +1,16 @@
+{
+  "name": "blogui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --watch",
+    "serve": "php -S localhost:3000"
+  },
+  "keywords": [],
+  "author": "Kunal Khan",
+  "license": "ISC",
+  "description": "My Blog HTML UI",
+  "devDependencies": {
+    "tailwindcss": "^3.4.11"
+  }
+}
