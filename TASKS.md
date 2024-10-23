@@ -1,6 +1,5 @@
 # PENDING
 - Add mobile navbar menu
-- Make home page responsive
 - Add posts page
 - Add single post page
 - Create admin login page
@@ -9,6 +8,7 @@
 - Add dark mode toggle
 
 # COMPLETED
+- Make home page responsive
 - Separate navbar from header
 - create footer block
 - Create posts block

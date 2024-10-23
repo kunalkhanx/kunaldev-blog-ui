@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <title>KunalDev.com :: Blog</title>
+    <title>KunalDev.com :: Home</title>
 </head>
 <body class="bg-gray-100">
 
     <!-- PAGE HEADER -->
     <div class="bg-white">
         <div class="container max-w-screen-xl mx-auto px-4">
-            <div class="flex items-center gap-6 justify-center py-24">
-                <img src="/assets/images/face.png" class="w-24 h-24 flex-shrink-0 rounded-full" alt="Kunal Khan">
-                <a href="/" class="text-5xl font-semibold">Kunal<span class="font-normal">{dev}</span></a>
+            <div class="flex items-center gap-6 justify-center py-12 lg:py-16 xl:py-24">
+                <img src="/assets/images/face.png" class="size-16 lg:size-24 flex-shrink-0 rounded-full" alt="Kunal Khan">
+                <a href="/" class="text-3xl lg:text-5xl font-semibold">Kunal<span class="font-normal">{dev}</span></a>
             </div>             
         </div>
     </div>
@@ -22,7 +22,7 @@
     <!-- NAVBAR -->
     <div class="w-full bg-white shadow" id="navbar">
         <div class="flex justify-between items-center container max-w-screen-xl mx-auto px-4">
-            <div class="flex items-center gap-6">
+            <div class="hidden md:flex items-center gap-6">
                 <a href="/" id="brand" class="text-xl font-semibold hidden">Kunal<span class="font-normal">{dev}</span></a>
                 <nav>
                     <ul class="flex items-center">
@@ -35,8 +35,14 @@
                     </ul>
                 </nav>
             </div>
+
+            <button class="px-3 py-1.5 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
     
-            <form class="flex items-center justify-between relative">
+            <form class="hidden md:flex items-center justify-between relative">
                 <input type="text" placeholder="Search" class="px-4 py-2 w-full z-9 max-w-96 overflow-visible relative focus:outline-none peer">
                 <span class="block h-0.5 absolute bottom-0 left-0 w-0 bg-purple-500 transition-all ease-in-out duration-500 peer-focus:w-full"></span>
                 <button type="submit">
@@ -45,6 +51,12 @@
                     </svg>                          
                 </button>
             </form>
+
+            <button class="px-3 py-1.5 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>    
+            </button>
         </div>
     </div>
     <!-- NAVBAR -->
@@ -58,8 +70,8 @@
             
             <!-- POST ITEM -->
             <div class="flex flex-col gap-2">
-                <div class="flex justify-between items-center text-sm">
-                    <ul class="flex items-center gap-3">
+                <div class="flex max-sm:flex-col max-sm:gap-2 sm:justify-between md:items-center text-sm">
+                    <ul class="flex items-center gap-3 flex-wrap">
                         <li class="flex items-center gap-1 text-gray-600">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
@@ -86,14 +98,14 @@
                     </div>
                 </div>
                 <h2 class="text-2xl font-medium"><a href="" class="hover:text-purple-500 transition-all duration-500">How JavaScript Becomes The Language Of The Internet</a></h2>
-                <p class="text-gray-500 leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illum officia voluptates eum magni ipsam dignissimos modi placeat praesentium et minima, molestias non laboriosam accusantium distinctio totam rem, dolorum saepe.</p>
+                <p class="text-gray-500 leading-7 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illum officia voluptates eum magni ipsam dignissimos modi placeat praesentium et minima, molestias non laboriosam accusantium distinctio totam rem, dolorum saepe.</p>
             </div>
             <!-- POST ITEM -->
 
             <!-- POST ITEM -->
             <div class="flex flex-col gap-2">
-                <div class="flex justify-between items-center text-sm">
-                    <ul class="flex items-center gap-3">
+                <div class="flex max-sm:flex-col max-sm:gap-2 sm:justify-between md:items-center text-sm">
+                    <ul class="flex items-center gap-3 flex-wrap">
                         <li class="flex items-center gap-1 text-gray-600">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
@@ -120,14 +132,15 @@
                     </div>
                 </div>
                 <h2 class="text-2xl font-medium"><a href="" class="hover:text-purple-500 transition-all duration-500">How JavaScript Becomes The Language Of The Internet</a></h2>
-                <p class="text-gray-500 leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illum officia voluptates eum magni ipsam dignissimos modi placeat praesentium et minima, molestias non laboriosam accusantium distinctio totam rem, dolorum saepe.</p>
+                <p class="text-gray-500 leading-7 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illum officia voluptates eum magni ipsam dignissimos modi placeat praesentium et minima, molestias non laboriosam accusantium distinctio totam rem, dolorum saepe.</p>
             </div>
             <!-- POST ITEM -->
 
+
             <!-- POST ITEM -->
             <div class="flex flex-col gap-2">
-                <div class="flex justify-between items-center text-sm">
-                    <ul class="flex items-center gap-3">
+                <div class="flex max-sm:flex-col max-sm:gap-2 sm:justify-between md:items-center text-sm">
+                    <ul class="flex items-center gap-3 flex-wrap">
                         <li class="flex items-center gap-1 text-gray-600">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
@@ -142,7 +155,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
                             </svg>                          
-                            <span>2 days ago</span>
+                            <span>Just now</span>
                         </p>
 
                         <p class="flex items-center gap-1">
@@ -154,7 +167,7 @@
                     </div>
                 </div>
                 <h2 class="text-2xl font-medium"><a href="" class="hover:text-purple-500 transition-all duration-500">How JavaScript Becomes The Language Of The Internet</a></h2>
-                <p class="text-gray-500 leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illum officia voluptates eum magni ipsam dignissimos modi placeat praesentium et minima, molestias non laboriosam accusantium distinctio totam rem, dolorum saepe.</p>
+                <p class="text-gray-500 leading-7 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illum officia voluptates eum magni ipsam dignissimos modi placeat praesentium et minima, molestias non laboriosam accusantium distinctio totam rem, dolorum saepe.</p>
             </div>
             <!-- POST ITEM -->
 
@@ -176,7 +189,7 @@
             </div>
 
             <nav>
-                <ul class="flex items-center gap-3 justify-center hover:[&>li>a]:text-purple-500">
+                <ul class="flex items-center gap-3 justify-center hover:[&>li>a]:text-purple-500 flex-wrap">
                     <li><a href="">Home</a></li>
                     <li><a href="">Dev</a></li>
                     <li><a href="">Server</a></li>
